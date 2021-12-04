@@ -731,6 +731,7 @@ html,body{
    color: #ffffff;
 }
 .new-collections__novelty {
+   
 }
 
 .novelty__img {
@@ -745,13 +746,28 @@ html,body{
    }
 }
 .novelty__button {
+   width: 196px;
+   cursor: pointer;
    position: relative;
+   bottom: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+
+   /*position: relative;
    width: 100%;
    height: 100%;
-   bottom: 80px;
-   left:160px ;
+   bottom: 15%;
+   left: 30%;*/
 }
  /*??????????????????????????????????????????????????*/
+
+ @media (max-width:992px){
+    .novelty__button{
+      transform: translate(-50%, -300%);
+    }
+ }
+
 .novelty__shop-now {
    padding: 22px 51px;
    opacity: 0.6;
